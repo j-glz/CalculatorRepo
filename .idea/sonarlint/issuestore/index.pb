@@ -33,3 +33,5 @@ O
 src/model/OperationFactory.java,7\7\77d27095251e23fddd4e86ed22df6f5445f79b86
 K
 src/service/Calculator.java,8\6\8652237c69fcd214cf7f745f6487a908ee047a59
+K
+src/model/AddOperation.java,a\f\afc4ed096dae4b1f94367a7b75e1ea99fa266e92

@@ -50,7 +50,7 @@ public class Calculator {
     private boolean continueCalculation() {
         System.out.print("Do you want to perform another calculation? (yes/no): ");
         String continueInput = scanner.next().toLowerCase();
-        return !continueInput.equals("yes");
+        return continueInput.equals("yes");
     }
 
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package model;
 
 // Encapsulation and Polymorphism: model.SquareRootOperation class
-class SquareRootOperation implements Operation {
+public class SquareRootOperation implements Operation {
     @Override
     public double perform(double num1, double num2) {
         if (num1 >= 0) {

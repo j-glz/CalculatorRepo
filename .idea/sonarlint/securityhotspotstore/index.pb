@@ -35,3 +35,5 @@ K
 src/service/Calculator.java,8\6\8652237c69fcd214cf7f745f6487a908ee047a59
 K
 src/model/AddOperation.java,a\f\afc4ed096dae4b1f94367a7b75e1ea99fa266e92
+L
+src/test/CalculatorTest.java,7\6\765cc45015a23b759613827f59ef19831154d51d

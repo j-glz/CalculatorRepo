@@ -1,7 +1,7 @@
 package model;
 
 // Encapsulation and Polymorphism: model.DivideOperation class
-class DivideOperation implements Operation {
+public class DivideOperation implements Operation {
     @Override
     public double perform(double num1, double num2) {
         if (num2 != 0) {

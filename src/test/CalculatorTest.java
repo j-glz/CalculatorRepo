@@ -2,7 +2,7 @@ package test;
 
 import model.*;
 import org.junit.jupiter.api.Test;
-import service.Calculator;
+import model.Calculator;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -37,3 +37,9 @@ K
 src/model/AddOperation.java,a\f\afc4ed096dae4b1f94367a7b75e1ea99fa266e92
 L
 src/test/CalculatorTest.java,7\6\765cc45015a23b759613827f59ef19831154d51d
+N
+src/service/CalculatorCLI.java,d\c\dcc29e42cf2e8e8bc4511e52f7f5cfbbe4d14867
+I
+src/model/Calculator.java,5\3\539e7c64c2a15c05ed9ddd4699f8ce8f50d656a4
+Q
+!src/service/CalculatorRunner.java,9\f\9f0fad6bd631835523b4214d7a862204b274d539

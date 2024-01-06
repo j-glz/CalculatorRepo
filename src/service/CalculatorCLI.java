@@ -1,16 +1,17 @@
 package service;
 
-import model.*;
+import model.Calculator;
+import model.Operation;
 
 import java.util.Scanner;
 
-public class Calculator {
-    private final Scanner scanner;
-    private final OperationFactory operationFactory;
+public class CalculatorCLI {
+    Calculator calculator;
+    Scanner scanner;
 
-    public Calculator() {
-        this.scanner = new Scanner(System.in);
-        this.operationFactory = new OperationFactory();
+    public CalculatorCLI(Calculator calculator) {
+        this.calculator = calculator;
+        scanner = new Scanner(System.in);
     }
 
     public void runCalculator() {
@@ -22,7 +23,7 @@ public class Calculator {
                 String operator = getOperator();
                 double num2 = getOperand("Enter the second number: ");
 
-                Operation operation = operationFactory.createOperation(operator);
+                Operation operation = calculator.getOperationFactory().createOperation(operator);
                 double result = operation.perform(num1, num2);
 
                 System.out.println("Result: " + result);
@@ -50,11 +51,6 @@ public class Calculator {
     private boolean continueCalculation() {
         System.out.print("Do you want to perform another calculation? (yes/no): ");
         String continueInput = scanner.next().toLowerCase();
-        return continueInput.equals("yes");
-    }
-
-    public static void main(String[] args) {
-        Calculator calculator = new Calculator();
-        calculator.runCalculator();
+        return continueInput.equals("yes") || continueInput.equals("y");
     }
 }

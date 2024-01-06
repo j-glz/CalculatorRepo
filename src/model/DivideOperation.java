@@ -1,4 +1,6 @@
-// Encapsulation and Polymorphism: DivideOperation class
+package model;
+
+// Encapsulation and Polymorphism: model.DivideOperation class
 class DivideOperation implements Operation {
     @Override
     public double perform(double num1, double num2) {

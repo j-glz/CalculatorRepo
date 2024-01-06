@@ -1,4 +1,6 @@
-// Encapsulation and Polymorphism: TrigonometricOperation class
+package model;
+
+// Encapsulation and Polymorphism: model.TrigonometricOperation class
 class TrigonometricOperation implements Operation {
     private final String operation;
 

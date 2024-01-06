@@ -1,4 +1,6 @@
-// Encapsulation and Polymorphism: PowerOperation class
+package model;
+
+// Encapsulation and Polymorphism: model.PowerOperation class
 class PowerOperation implements Operation {
     @Override
     public double perform(double num1, double num2) {

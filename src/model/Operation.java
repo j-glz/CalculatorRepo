@@ -1,6 +1,8 @@
 package model;
 
+import java.math.BigDecimal;
+
 // Encapsulation and Data Abstraction: model.Operation interface
 public interface Operation {
-    double perform(double num1, double num2);
+    BigDecimal perform(BigDecimal num1, BigDecimal num2);
 }

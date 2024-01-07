@@ -3,6 +3,7 @@ package service;
 import model.Calculator;
 import model.Operation;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class CalculatorCLI {
@@ -19,12 +20,12 @@ public class CalculatorCLI {
 
         while (!exit) {
             try {
-                double num1 = getOperand("Enter the first number: ");
+                BigDecimal num1 = getOperand("Enter the first number: ");
                 String operator = getOperator();
-                double num2 = getOperand("Enter the second number: ");
+                BigDecimal num2 = getOperand("Enter the second number: ");
 
                 Operation operation = calculator.getOperationFactory().createOperation(operator);
-                double result = operation.perform(num1, num2);
+                BigDecimal result = operation.perform(num1, num2);
 
                 System.out.println("Result: " + result);
             } catch (Exception e) {
@@ -38,9 +39,9 @@ public class CalculatorCLI {
         scanner.close();
     }
 
-    private double getOperand(String prompt) {
+    private BigDecimal getOperand(String prompt) {
         System.out.print(prompt);
-        return scanner.nextDouble();
+        return BigDecimal.valueOf(Double.parseDouble(scanner.next()));
     }
 
     private String getOperator() {
